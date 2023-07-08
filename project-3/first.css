@@ -1,0 +1,19 @@
+#heading1{
+    color:	#f4f2f2;
+    text-align:center;
+    text-decoration:overline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgb(2, 22, 2);
+    letter-spacing: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.heading2{
+    color:blue;
+}
+
+.para{
+   line-height: 30px;
+}
