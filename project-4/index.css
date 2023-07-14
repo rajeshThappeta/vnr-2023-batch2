@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+:root {
+  --my-color: #666;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: var(--my-color);
+  font-weight: 100;
+  text-align: center;
+
+}
+
+h1:hover{
+    color:blue;
+    font-weight: 200;
+}
+
+ul{
+    font-size: 30px;
+    color: chocolate;
+    /* list-style-type: circle; */
+    list-style-image: url(../assets/leaf_icon.jpg);
+    text-align: center;
+    list-style-position: inside;
+}
+
+a{
+    font-size: 40px;
+}
+
+
+a:visited{
+    color:darkgreen;
+}
+
+a:focus{
+    color:darkmagenta;
+}
+
+a:hover{
+    color:goldenrod;
+    font-size: 55px;
+}
+
+a:active{
+    color:coral;
+    font-style: italic;
+}
