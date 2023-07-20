@@ -6,8 +6,114 @@
     <title>Document</title>
   </head>
   <body>
-   
+    <!-- simple table -->
+    <table>
+      <!-- table header -->
+      <thead>
+        <tr>
+          <th>Eno</th>
+          <th>First name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <!-- table body -->
+      <tbody>
+        <!-- row-1 -->
+        <tr>
+          <td>1</td>
+          <td>Ravi</td>
+          <td>Manager</td>
+          <td>600000</td>
+        </tr>
+        <!-- row-2 -->
+        <tr>
+          <td>2</td>
+          <td>Bhanu</td>
+          <td>Developer</td>
+          <td>400000</td>
+        </tr>
+        <!-- row-3 -->
+        <tr>
+          <td>3</td>
+          <td>Manasa</td>
+          <td>Test engineer</td>
+          <td>50000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Vikas</td>
+          <td>UX designer</td>
+          <td>300000</td>
+        </tr>
+      </tbody>
+    </table>
 
+    <!-- rowspan -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">1</td>
+          <td rowspan="3">David</td>
+          <td>Maths</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>78</td>
+        </tr>
 
+        <tr>
+          <td rowspan="3">2</td>
+          <td rowspan="3">Alex</td>
+          <td>Maths</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>83</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- colspan -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ravi</td>
+          <td>20000</td>
+        </tr>
+        <tr>
+          <td>Madhu</td>
+          <td>30000</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sum of salaries : 50000</td>
+          
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

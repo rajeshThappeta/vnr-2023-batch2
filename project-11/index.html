@@ -5,5 +5,52 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- form -->
+    <form>
+      <!-- username -->
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+      </div>
+      <!-- password -->
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <!-- age -->
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+      </div>
+      <!-- date of joining -->
+      <div>
+        <label for="doj">Date of joining</label>
+        <input type="date" name="doj" id="doj">
+      </div>
+      <!-- email -->
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+
+      <!-- sleect state -->
+      <div>
+        <label for="state">Select state</label>
+        <select name="state" id="state">
+          <option value="" disabled selected> --State name--</option>
+          <option value="telangana">Telangana</option>
+          <option value="ap">Andhra pradesh</option>
+          <option value="kerala" >Kerala</option>
+        </select>
+      </div>
+      <!-- feedback -->
+      <div>
+        <label for="feedback">Feedback</label>
+        <textarea name="feedback" id="feedback" cols="25" rows="5"></textarea>
+      </div>
+      <!-- submit button -->
+      <button type="submit">Registration</button>
+    </form>
+  </body>
 </html>
