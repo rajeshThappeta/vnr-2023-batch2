@@ -1,13 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root {
-  --red-color: #a92120;
-  --pink-color: #c90076;
-  --grey-color: #6e6e6e;
-  --yellow-color: #daa520;
-}
+
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+label{
+  font-size: 1.4rem;
+  /* color:whitesmoke; */
+}
+
+form{
+  width:500px;
+  margin: auto;
+  margin-bottom: 200px;
+  /* background-color: #888;
+  padding: 20px; */
+}
+
+input,select,textarea{
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 5px 8px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+
+}
+
+
+.space{
+  margin-bottom: 15px;
+}
+
+
+input[ type='checkbox'],input[ type='radio']{
+  width:20px;
+  
+}
+
+button{
+ background-color: #666;
+ color:white;
+ font-size: 1.5rem;
+ padding: 5px 8px;
+ border-radius: 5px;
+ display: block;
+ margin: auto;
+}

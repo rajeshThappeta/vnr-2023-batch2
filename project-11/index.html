@@ -9,43 +9,87 @@
     <!-- form -->
     <form>
       <!-- username -->
-      <div>
+      <div class="space">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder=" Eg. John"
+          autocomplete="on"
+          required
+          minlength="4"
+          maxlength="6"
+        />
       </div>
       <!-- password -->
-      <div>
+      <div class="space">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" />
       </div>
       <!-- age -->
-      <div>
+      <div class="space">
         <label for="age">Age</label>
-        <input type="number" name="age" id="age">
+        <input type="number" name="age" id="age" required min="20" max="30" />
       </div>
       <!-- date of joining -->
-      <div>
+      <div class="space">
         <label for="doj">Date of joining</label>
-        <input type="date" name="doj" id="doj">
+        <input type="date" name="doj" id="doj" />
       </div>
       <!-- email -->
-      <div>
+      <div class="space">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" />
       </div>
 
       <!-- sleect state -->
-      <div>
+      <div class="space">
         <label for="state">Select state</label>
         <select name="state" id="state">
-          <option value="" disabled selected> --State name--</option>
+          <option value="" disabled selected>--State name--</option>
           <option value="telangana">Telangana</option>
           <option value="ap">Andhra pradesh</option>
-          <option value="kerala" >Kerala</option>
+          <option value="kerala">Kerala</option>
         </select>
       </div>
+
+      <!-- technical skills -->
+      <div class="space">
+        <label>Select skills</label>
+        <!-- checkbox-1 for html -->
+        <div>
+          <input type="checkbox" name="html" id="html" />
+          <label for="html">HTML</label>
+        </div>
+        <div>
+          <!-- checkbox-1 for html -->
+          <input type="checkbox" name="javascript" id="js" />
+          <label for="js">JavaScript</label>
+        </div>
+      </div>
+      <!-- gender -->
+      <div class="space">
+        <label>Select gender</label>
+        <div>
+          <!-- male -->
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <!-- female -->
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <!-- profile image -->
+      <div class="space">
+        <label for="profile">Profile image</label>
+        <input type="file" name="profile" id="profile" />
+      </div>
       <!-- feedback -->
-      <div>
+      <div class="space">
         <label for="feedback">Feedback</label>
         <textarea name="feedback" id="feedback" cols="25" rows="5"></textarea>
       </div>
