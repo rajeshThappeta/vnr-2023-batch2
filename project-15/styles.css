@@ -1,0 +1,30 @@
+.parent{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.child-1{
+    background-color: blue;
+    position: absolute;
+    bottom:-50px;
+    right:-50px;
+   
+}
+
+.child-2{
+    background-color: green;
+}
+
+.child-3{
+    background-color: red;
+}
