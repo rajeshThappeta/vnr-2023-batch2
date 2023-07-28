@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,59 +11,57 @@ body {
 }
 
 /* navbar styles */
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   background-color: #303030;
   padding: 5px 20px;
- position: fixed;
- width: 100%;
- z-index: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
-nav img{
- width: 60px;
+nav img {
+  width: 60px;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   gap: 20px;
-  color:goldenrod;
+  color: goldenrod;
   align-items: center;
 }
 
-
 /* header styles */
-header{
-  background-image: linear-gradient( to right,rgba(68,68,68,0.27),#303030),
-   url('../assets/1.webp');
-   background-repeat: no-repeat;
-   min-height: 40vh;
-   background-size: contain;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   padding: 100px;
-  
+header {
+  background-image: linear-gradient(to right, rgba(68, 68, 68, 0.27), #303030),
+    url("../assets/1.webp");
+  background-repeat: no-repeat;
+  min-height: 40vh;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 100px;
 }
 
-header .header-content{
+header .header-content {
   width: 350px;
   color: gold;
 }
 
-main{
+main {
   min-height: 100vh;
- position: relative;
+  position: relative;
 }
 
-main .row{
+main .row {
   display: flex;
   justify-content: space-around;
 }
 
-main .shirt-card{
+main .shirt-card {
   width: 300px;
   padding: 15px;
   text-align: center;
@@ -74,39 +72,19 @@ main .shirt-card{
   z-index: 0;
 }
 
-main img{
+main img {
   width: 200px;
 }
 
-main button{
+main button {
   padding: 5px 10px;
   background-color: yellow;
   border: none;
   font-size: 1.1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer styles */
-footer{
+footer {
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
@@ -115,25 +93,38 @@ footer{
   padding: 25px;
 }
 
-
-.logo{
+.logo {
   position: absolute;
   width: 70px;
-  top:-35px;
-  right:-35px;
+  top: -35px;
+  right: -35px;
 }
 
-
-.whatsapp-logo{
+.whatsapp-logo {
   width: 80px;
   position: fixed;
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
   margin-bottom: 120px;
 }
 
-
-.wish{
+.wish {
   position: sticky;
-  top:100px;
+  top: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+   
+    background-image: url("../assets/1.webp");
+    background-size: 100% 400px;
+  }
+
+  main .row{
+    flex-direction: column;
+  }
+
+  .wish{
+    display: none;
+  }
 }
