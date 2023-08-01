@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- link to bootstrap.css -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- link to styles.css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="display-2 text-info text-center">Forms Demo</h1>
+    <!-- form -->
+    <form class="mt-5 bg-light p-4">
+        <!-- username -->
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control " name="username" id="username">
+        </div>
+        <!-- select -->
+        <div class="mb-3">
+            <label for="tech" class="form-label">Technology</label>
+            <select name="tech" id="tect" class="form-select">
+                <option value="">React</option>
+                <option value="">CSS</option>
+                <option value="">Angular</option>
+            </select>
+        </div>
+        <!-- skills -->
+        <div class="mb-3">
+            <!-- react -->
+            <div class="form-check">
+                <input type="checkbox" name="react" id="react" class="form-check-input">
+                <label for="react" class="form-input-label">React</label>
+            </div>
+
+              <!-- Angular -->
+              <div class="form-check">
+                <input type="checkbox" name="angular" id="angular" class="form-check-input">
+                <label for="angular" class="form-input-label">Angular</label>
+            </div>
+        </div>
+
+        <button  type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+</body>
+</html>
